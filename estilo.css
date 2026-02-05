@@ -68,7 +68,7 @@ section {
 .tarjeta img {
     width: 100%; /* Ajuste para que la imagen ocupe el ancho de la tarjeta */
     height: 180px;
-    object-fit: cover; /*la imagen mantiene su relacion de apecto, pero ocupa todo el contenedor*/
+    object-fit: cover;
     border-radius: 5px;
 }
 /* Elementos específicos del Index */
@@ -85,6 +85,20 @@ section {
     box-shadow: 0 2px 5px #1a1b73;
     padding: 20px;
     text-align: center;
+}
+/* Estilo para el contenedor del vídeo */
+.video-container {
+    max-width: 800px;       /* Ancho máximo para PC */
+    margin: 20px auto;      /* Centrado */
+}
+
+/* Estilo para la etiqueta VIDEO nativa */
+.video-container video {
+    width: 100%;            /* Responsive: se adapta al ancho */
+    height: auto;           /* Mantiene proporción */
+    border-radius: 10px;    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra */
+    display: block;
 }
 #portada {
     width: 100%;
@@ -134,4 +148,35 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 50px;
+}
+/* --- Añadir al final de estilo.css --- */
+
+/* Contenedor para centrar y organizar el texto del footer */
+.licencia-container p {
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+    color: white; /* Asegura texto blanco */
+}
+
+/* Estilo del enlace de la licencia */
+.licencia-container a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.licencia-container a:hover {
+    color: #1a1b73; /* Azul corporativo al pasar el ratón */
+    background-color: white; /* Pequeño efecto para resaltar */
+    text-decoration: none;
+}
+
+/* Estilo para los iconos SVG */
+.cc-iconos img {
+    height: 1.2em; /* Tamaño relativo al texto */
+    width: auto;
+    vertical-align: middle; /* Alineados con el texto */
+    margin-left: 4px; /* Separación entre iconos */
+    /* TRUCO: Esto convierte los iconos negros en blancos */
 }
